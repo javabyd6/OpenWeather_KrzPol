@@ -1,3 +1,5 @@
+package Service;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,4 +11,8 @@ public class Weather
 {
     Location location;
     Current current;
+   public int getTemp()
+    {
+        return current.temp_c;
+    }
 }
